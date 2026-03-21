@@ -68,3 +68,18 @@ function simplifyLine() {
     }
   }).addTo(map);
 }
+
+function clearMap() {
+
+  // Remove all drawn items
+  drawnItems.clearLayers();
+
+  // Remove simplified line if exists
+  if (simplifiedLayer) {
+    map.removeLayer(simplifiedLayer);
+    simplifiedLayer = null;
+  }
+
+  // Reset stored line
+  drawnLayer = null;
+}
