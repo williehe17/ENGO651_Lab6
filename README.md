@@ -23,12 +23,12 @@ This lab demonstrates how to simplify a user-drawn polyline in a web map using T
 
 ## File Structure
 
-'''text
+```text
 Lab6/
 │── index.html
 │── style.css
 │── script.js
-'''
+```
 
 ## How It Works
 
@@ -65,12 +65,12 @@ Lab6/
 
 ## Example Simplification Code
 
-'''javascript
+```javascript
 var simplified = turf.simplify(geojson, {
 tolerance: 0.01,
 highQuality: false
 });
-'''
+```
 ## Author
 
 Wei He
